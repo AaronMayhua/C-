@@ -34,6 +34,7 @@ namespace EF_Aaron_Mayhua_Najarro_POOII.Controllers
             ViewBag.mensaje = daoPasajero.CrearPasajero(obj);
             listarPais = daoPais.listarPais();
             ViewBag.Pais = new SelectList(listarPais, "idPais", "nombre", obj.nombrePais);
+            // Este return me devuelve un obj
             return View(obj);
         }
 
